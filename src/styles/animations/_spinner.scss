@@ -1,0 +1,10 @@
+.spinner {
+  animation: spin 1s infinite steps(14);
+  display: inline-block;
+  text-rendering: auto;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(359deg); }
+}

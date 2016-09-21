@@ -1,0 +1,19 @@
+// Modal - Overlay
+// ------------------------------------------------------------------------------------------------------------------------------
+.modal_overlay {
+  @include position(fixed, 0 0 0 0);
+  background: rgba($Black, .2);
+  display: none;
+  overflow-y: auto;
+  z-index: z(overlay);
+}
+
+// Modal - Wrapper
+// ------------------------------------------------------------------------------------------------------------------------------
+.modal {
+  @include centerer;
+  background: $White;
+  border-radius: 6px;
+  display: inline-block;
+  padding: 35px 50px;
+}

@@ -1,0 +1,21 @@
+// # ------------------- SNIP -------------------
+// snippet horizontal-align
+// @include horizontal-align;
+// endsnippet
+// # ------------------- SNAP -------------------
+
+@mixin horizontal-align() {
+  line-height: 1;
+  overflow: hidden;
+  text-align: justify;
+
+  &::after {
+    content: '';
+    display: inline-block;
+    font-size: 0;
+    height: 0;
+    line-height: 0;
+    visibility: hidden;
+    width: 100%;
+  }
+}

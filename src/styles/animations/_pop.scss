@@ -1,0 +1,35 @@
+@keyframes poopout {
+  from {
+    opacity: 1;
+    transform: scale(1) translateZ(0);
+  }
+  50% {
+    opacity: 0;
+    transform: scale(0) translateZ(0);
+  }
+}
+
+@keyframes poopin {
+  50% {
+    opacity: 0;
+    transform: scale(0) translateZ(0);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1) translateZ(0);
+  }
+}
+
+.poopout {
+  animation-duration: .5s;
+  animation-fill-mode: forwards;
+  animation-name: poopout;
+  animation-timing-function: cubic-bezier(.6, -.28, .735, .045);
+}
+
+.poopin {
+  animation-duration: .5s;
+  animation-fill-mode: forwards;
+  animation-name: poopin;
+  animation-timing-function: cubic-bezier(.175, .885, .32, 1.275);
+}

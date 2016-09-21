@@ -1,0 +1,14 @@
+languageCode = "en-us"
+title = "Some Website Name"
+baseURL = "http://localhost"
+googleAnalytics = ""
+publishdir = "../public"
+
+[taxonomies]
+  category = "categories"
+  tag = "tags"
+
+[params]
+  author = "Elad Rom"
+  description = "This is a website description"
+  subtitle = "This is a website subtitle"

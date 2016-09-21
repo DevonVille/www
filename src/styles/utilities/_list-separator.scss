@@ -1,0 +1,26 @@
+// # ------------------- SNIP -------------------
+// snippet list-seperator
+// @include list-seperator ( ${1:height}, ${2:color}, ${3:top left}, ${4:no-repea});
+// endsnippet
+// # ------------------- SNAP -------------------
+
+@mixin list-separator($width, $height, $color, $x-location) {
+  $unit: unit($height);
+  position: relative;
+
+  &::after {
+    background: $color;
+    content: '';
+    display: block;
+    height: $height;
+    position: absolute;
+    right: $x-location;
+    width: $width;
+
+    @if $unit == 'px' {
+      margin-top: -#{$height / 2};
+      top: 50%;
+    }
+    @else { top: 0; }
+	}
+}
