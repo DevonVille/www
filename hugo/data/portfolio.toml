@@ -1,0 +1,9 @@
+# Portfolio section
+# ******************************************************************************************************************************
+title = "Portfolio"
+
+[[item]]
+  client = "Client"
+  date = "Date"
+  category = "Category"
+  buttonText = "Close project"

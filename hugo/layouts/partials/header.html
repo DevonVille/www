@@ -1,4 +1,4 @@
-<header id="header">
-    <h1><a href="{{.Site.BaseURL}}">{{.Site.Title}}</a></h1>
-    <h2>{{.Site.Params.subtitle}}</h2>
-</header>
+{{ partial "background.html" . }}
+<h1>{{ .Site.Params.hero.title }}</h1>
+<h2>{{ .Site.Params.hero.subtitle }}</h2>
+<a href="/#contact" class="btn btn_contact">{{ .Site.Params.hero.buttonText }}</a>

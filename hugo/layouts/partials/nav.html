@@ -1,11 +1,19 @@
 <div id="navbar">
     <a href="#" class="logo">Elad Rom</a>
 
-    <nav id="nav">
-        <ul class="list-unstyled">
-            <li><a href="#">Home</a></li>
-            <li><a href="#">Projects</a></li>
-            <li><a href="#">Contact</a></li>
-        </ul>
+    <nav id="nav" class="menu">
+        <input type="checkbox" href="#" class="menu-open" name="menu-open" id="menu-open"/>
+        <label class="menu-open-button" for="menu-open">
+            <span class="hamburger hamburger-1"></span>
+            <span class="hamburger hamburger-2"></span>
+            <span class="hamburger hamburger-3"></span>
+        </label>
+
+      {{ range .Site.Params.menu.item }}
+        <a class="menu-item" href="{{ .url }}">
+            <i class="{{ .icon }}"></i>
+            <span>{{ .name }}</span>
+        </a>
+      {{ end }}
     </nav>
 </div>

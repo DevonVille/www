@@ -1,13 +1,67 @@
+# Site settings
+# ******************************************************************************************************************************
+baseurl = "http://localhost"
 languageCode = "en-us"
-title = "Some Website Name"
-baseURL = "http://localhost"
-googleAnalytics = ""
+title = "Elad Rom | Front End Developer"
 publishdir = "../public"
-
-[taxonomies]
-  category = "categories"
-  tag = "tags"
+googleAnalytics = ""
+email = "iwfmp@yandex.com"
 
 [params]
-  author = "Elad Rom"
+  name = "Elad Rom"
   description = "Front End Developer and CSS Wizard"
+
+  # Navigation
+  # ******************************************************************************************************************************
+  [params.menu]
+
+  [[params.menu.item]]
+    name = "Expertise"
+    icon = "icon-home"
+    url  = "#expertise"
+
+  [[params.menu.item]]
+    name = "Portfolio"
+    icon = "icon-briefcase"
+    url  = "#portfolio"
+
+  [[params.menu.item]]
+    name = "Contact"
+    icon = "icon-mail"
+    url  = "#contact"
+
+  # Hero section
+  # ******************************************************************************************************************************
+  [params.hero]
+    title = "Hi, I'm Elad."
+    subtitle = "I'm a CSS Wizard."
+    buttonText = "Yes, I'm Available for hire"
+
+  # Contact section
+  # ******************************************************************************************************************************
+  [params.form]
+    title = "Let's work together"
+
+    # Form fields
+    name = "Your Name"
+    email = "Your Email"
+    message = "Tell me about your project"
+    buttonText = "Send"
+
+  # Footer section
+  # ******************************************************************************************************************************
+  [params.footer]
+    enable = true
+    copyright = "Published under the Unlicense License"
+
+    [[params.footer.social]]
+      icon = "fa-twitter"
+      link = "#"
+
+    [[params.footer.social]]
+      icon = "fa-facebook"
+      link = "#"
+
+    [[params.footer.social]]
+      icon = "fa-linkedin"
+      link = "#"

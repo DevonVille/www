@@ -1,55 +1,17 @@
-{{ partial "head.html" . }}
-{{ partial "nav.html" . }}
-
-<header id="header">
-    <h1>Hi, I'm Elad.</h1>
-    <h2>I'm a CSS Wizard.</h2>
-    <a href="/contact.html" class="btn btn_contact">Yes, I'm available for hire</a>
-</header>
-
-<main id="main">
-    <section class="expertise">
-        <h2>My Expertise</h2>
-        <div class="expertise_blocks">
-            <div class="expertise_block">
-                <i class="icon-ruby"></i>
-                <h3>Pure CSS</h3>
-                <p>A lot can be done using only pure css. Don't believe it? This whole site design is written purely in CSS. Check it out!</p>
-            </div>
-            <div class="expertise_block">
-                <i class="icon-embed"></i>
-                <h3>Vanilla Code</h3>
-                <p>Frameworks like Bootstrap are heavy and clunky. Vanille code let's you have flexibility and you get faster results.</p>
-            </div>
-            <div class="expertise_block">
-                <i class="icon-squirrel"></i>
-                <h3>Complex Designs</h3>
-                <p>I had experience with large scale websites. As the site gets bigger it's usually harder to maintain. Not for me!</p>
-            </div>
-            <div class="expertise_block">
-                <i class="icon-mobile"></i>
-                <h3>Responsive Design</h3>
-                <p>Responsive design is today's status quo. It's an art by itself, and by using mobile-up design I give it the attention it deserves.</p>
-            </div>
-            <div class="expertise_block">
-                <i class="icon-leaf"></i>
-                <h3>Team Collaboration</h3>
-                <p>Be it designers, Back-End developers or Project Managers, I've seen and been with them all, working with strict timelines and requirements.</p>
-            </div>
-            <div class="expertise_block">
-                <i class="icon-magic-wand"></i>
-                <h3>Pixel Perfect</h3>
-                <p>Designers are a special kind. They have keen eye for the slightest variation from their design. If you want your site perfect, that's my speciality.</p>
-            </div>
-        </div>
-    </section>
-
-    <section class="contact">
-        <h2>Want to work together?</h2>
-        <p>I'm currently accepting new projects and would love to hear about yours.</p>
-        <p>Please take a few minutes to tell me about it.</p>
-        <a href="/contact.html" class="btn btn_contact">Contact me!</a>
-    </section>
-</main>
-
-{{ partial "footer.html" . }}
+<!DOCTYPE html>
+<html lang="{{ with .Site.LanguageCode }}{{ . }}{{ else }}en-US{{ end }}">
+    <head>
+        {{ partial "head.html" . }}
+    </head>
+    <body>
+        {{ partial "nav.html" . }}
+        <header id="header">
+            {{ partial "header.html" . }}
+        </header>
+        <main id="main">
+            {{ partial "expertise.html" . }}
+            {{ partial "portfolio.html" . }}
+            {{ partial "contact.html" . }}
+        </main>
+    </body>
+</html>

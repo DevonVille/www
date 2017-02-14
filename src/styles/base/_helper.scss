@@ -8,6 +8,8 @@ $GrayLight: #a2a2a2;
 $White: #fff;
 $DarkBlue: rgb(49, 61, 65);
 $Yellow: #fdcd3b;
+$LightBlue: #00b4ff;
+$LightRed: #f84462;
 
 $FontReg: 'Lato', sans-serif;
 $FontBold: 'Montserrat', sans-serif;
@@ -16,6 +18,7 @@ $FontBold: 'Montserrat', sans-serif;
 // Utilities
 // *****************************************************************************************************************************
 @import 'utilities/centerer';
+@import 'utilities/math';
 @import 'utilities/position';
 @import 'utilities/size';
 @import 'utilities/visually-hidden';
@@ -25,3 +28,10 @@ $FontBold: 'Montserrat', sans-serif;
 // Componenets
 // *****************************************************************************************************************************
 @import 'components/btn';
+
+// ******************************************************************************************************************************
+// Animations
+// *****************************************************************************************************************************
+@import 'animations/background';
+@import 'animations/nav-gooey';
+@import 'animations/nav-stroke';

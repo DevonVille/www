@@ -1,0 +1,12 @@
+<section class="expertise">
+    <h2>{{ .Site.Data.expertise.title }}</h2>
+    <div class="expertise_blocks">
+        {{ range .Site.Data.expertise.item }}
+        <div class="expertise_block">
+            <i class="{{ .icon }}"></i>
+            <h3>{{ .title }}</h3>
+            <p>{{ .description }}</p>
+        </div>
+        {{ end }}
+    </div>
+</section>
