@@ -10,5 +10,4 @@ publishdir = "../public"
 
 [params]
   author = "Elad Rom"
-  description = "This is a website description"
-  subtitle = "This is a website subtitle"
+  description = "Front End Developer and CSS Wizard"

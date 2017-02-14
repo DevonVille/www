@@ -1,0 +1,45 @@
+#main {
+  text-align: center;
+  > * { padding: 8rem 2rem; }
+  h2 { margin-bottom: 4rem; }
+
+  .expertise {
+    margin: 0 auto;
+    max-width: 1200px;
+
+    .expertise_blocks {
+      align-items: flex-start;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      @include mq(mobile, landscape) {
+        flex-direction: column;
+        justify-content: center;
+      }
+    }
+    .expertise_block {
+      margin: 2rem 0;
+      @include mq(landscape) { width: 30%; }
+      i {
+        color: $Yellow;
+        display: block;
+        font-size: 5rem;
+        margin-bottom: 2rem;
+      }
+      p { color: $GrayLight; }
+    }
+  }
+
+  .contact {
+    background: $Yellow;
+    p {
+      font-size: 2rem;
+      margin: 0;
+    }
+    .btn {
+      @include btn($GrayDarker);
+      @include btn-shine;
+      margin-top: 40px;
+    }
+  }
+}

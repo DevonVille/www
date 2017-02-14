@@ -1,0 +1,14 @@
+#navbar {
+  @include position(absolute, 0 0 null 0);
+  @include size(auto 80px);
+  align-items: center;
+  background: rgba($Black, .1);
+  display: flex;
+  justify-content: space-between;
+  @include mq(desktop) { padding: 0 calc((100% - 1020px) / 2); }
+
+  ul {
+    display: flex;
+    li { margin: 0 15px; }
+  }
+}
