@@ -30,23 +30,12 @@ email = "iwfmp@yandex.com"
     icon = "icon-mail"
     url  = "#contact"
 
-  # Hero section
+  # Header section
   # ******************************************************************************************************************************
-  [params.hero]
+  [params.header]
     title = "Hi, I'm Elad."
     subtitle = "I'm a CSS Wizard."
     buttonText = "Yes, I'm Available for hire"
-
-  # Contact section
-  # ******************************************************************************************************************************
-  [params.form]
-    title = "Let's work together"
-
-    # Form fields
-    name = "Your Name"
-    email = "Your Email"
-    message = "Tell me about your project"
-    buttonText = "Send"
 
   # Footer section
   # ******************************************************************************************************************************

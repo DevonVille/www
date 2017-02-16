@@ -1,6 +1,32 @@
+{{ "<!-- Form section -->" | safeHTML }}
 <section class="contact">
-    <h2>Want to work together?</h2>
-    <p>I'm currently accepting new projects and would love to hear about yours.</p>
-    <p>Please take a few minutes to tell me about it.</p>
-    <a href="/contact.html" class="btn btn_contact">Contact me!</a>
+    <div class="contact-start">
+        <h2>{{ .Site.Data.contact.title }}</h2>
+        <p>{{ .Site.Data.contact.description }}</p>
+        <p>{{ .Site.Data.contact.description2 }}</p>
+        <a href="/contact.html" class="btn btn_contact">{{ .Site.Data.contact.buttonText }}</a>
+    </div>
+
+    <div class="contact-form">
+        <h2 id="form-title">{{ .Site.Data.form.title }}</h2>
+        <form method="POST" action="//formspree.io/{{ with .Site.Data.email }}{{ . }}{{ end }}">
+            <fieldset class="contact-info-group">
+                <label>
+                    <span>{{ .Site.Data.form.name }}</span>
+                    <input type="text" name="name">
+                </label>
+                <label>
+                    <span>{{ .Site.Data.form.email }}</span>
+                    <input type="email" name="_replyto">
+                </label>
+            </fieldset>
+            <label>
+                <span>{{ .Site.Data.form.message }}</span>
+                <textarea name="message"></textarea>
+            </label>
+            <fieldset class="submit-wrap">
+                <input type="submit" value="{{ .Site.Data.form.buttonText }}">
+            </fieldset>
+        </form>
+    </div>
 </section>

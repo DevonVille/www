@@ -1,0 +1,18 @@
+# Contact section
+# ******************************************************************************************************************************
+[contact]
+  title = "Want to work together?"
+  description = "I'm currently accepting new projects and would love to hear about yours."
+  description2 = "Please take a few minutes to tell me about it."
+  buttonText = "Contact me!"
+
+# Form section
+# ******************************************************************************************************************************
+[form]
+  title = "Let's work together"
+
+  # Form fields
+  name = "Your Name"
+  email = "Your Email"
+  message = "Tell me about your project"
+  buttonText = "Send"
