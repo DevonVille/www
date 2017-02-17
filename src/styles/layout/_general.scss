@@ -41,6 +41,7 @@ html body {
     &:hover, &:active, &:focus {
       color: $GrayDarker;
       cursor: pointer;
+      outline: none;
       text-decoration: none;
     }
   }
@@ -51,14 +52,19 @@ html body {
     border-radius: 5px;
     box-sizing: border-box;
     color: $GrayDarker;
-    font-size: 1.3rem;
+    font-family: $FontReg;
+    font-size: 1.4rem;
     outline: none;
     padding: 1rem 2rem;
     resize: none;
 
-    &::-webkit-input-placeholder { color: $DarkBlue; }
-    &::-moz-placeholder { color: $DarkBlue; }
-    &:-ms-input-placeholder { color: $DarkBlue; }
-    &:-moz-placeholder { color: $DarkBlue; }
+    &::placeholder { color: $DarkBlue; }
+    &::input-placeholder { color: $DarkBlue; }
+  }
+
+  .no-select {
+    -webkit-tap-highlight-color: rgba($Black, 0);
+    -webkit-touch-callout: none;
+    user-select: none;
   }
 }
