@@ -56,9 +56,9 @@ html body {
     padding: 1rem 2rem;
     resize: none;
 
-    &::-webkit-input-placeholder { color: $GrayDarker; }
-    &::-moz-placeholder { color: $GrayDarker; }
-    &:-ms-input-placeholder { color: $GrayDarker; }
-    &:-moz-placeholder { color: $GrayDarker; }
+    &::-webkit-input-placeholder { color: $DarkBlue; }
+    &::-moz-placeholder { color: $DarkBlue; }
+    &:-ms-input-placeholder { color: $DarkBlue; }
+    &:-moz-placeholder { color: $DarkBlue; }
   }
 }

@@ -3,7 +3,7 @@
 title = "Portfolio"
 
 [[item]]
-  client = "Client"
-  date = "Date"
-  category = "Category"
-  buttonText = "Close project"
+  client = "MyQuest"
+  description = "Client"
+  desktop = ""
+  mobile = ""
