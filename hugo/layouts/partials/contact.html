@@ -1,28 +1,35 @@
 {{ "<!-- Form section -->" | safeHTML }}
 <section id="contact">
-    <h2>{{ .Site.Params.contact.title }}</h2>
-    <p class="description">{{ .Site.Params.contact.description }}</p>
-    <p class="description">{{ .Site.Params.contact.description2 }}</p>
+    <div id="contact-sent">
+        <h2>{{ .Site.Params.contact.title }}</h2>
+        <p class="description">{{ .Site.Params.contact.description }}</p>
+        <p class="description">{{ .Site.Params.contact.description2 }}</p>
 
-    <div class="contact-form">
-        <form method="POST" action="//formspree.io/{{ with .Site.Params.email }}{{ . }}{{ end }}">
-            <div class="form-inputs">
-                <input type="text" name="name" placeholder="{{ .Site.Params.contact.formName }}" required="">
-                <input type="text" name="_replyto" placeholder="{{ .Site.Params.contact.formEmail }}" required="">
-                <input type="text" name="phone" placeholder="{{ .Site.Params.contact.formPhone }}" required="">
-            </div>
-            <textarea name="message" placeholder="{{ .Site.Params.contact.formMessage }}" required=""></textarea>
-            <input type="submit" value="{{ .Site.Params.contact.formButton }}">
-        </form>
+        <div class="contact-form">
+            <form method="POST" action="//formspree.io/{{ with .Site.Params.email }}{{ . }}{{ end }}">
+                <div class="form-inputs">
+                    <div>
+                        <input type="text" name="name" placeholder="{{ .Site.Params.contact.formName }}" required="">
+                        <input type="text" name="_replyto" placeholder="{{ .Site.Params.contact.formEmail }}" required="">
+                        <input type="text" name="phone" placeholder="{{ .Site.Params.contact.formPhone }}" required="">
+                    </div>
+                    <textarea name="message" placeholder="{{ .Site.Params.contact.formMessage }}" required=""></textarea>
+                </div>
+                <div class="form-submit">
+                    <label class="form-submit-button" for="form-open">
+                        <input type="submit" value="{{ .Site.Params.contact.formButton }}">
+                        {{ .Site.Params.contact.formButton }}
+                    </label>
+                    <span class="form-submit-bg"></span>
+                </div>
+            </form>
+        </div>
+
+        <div class="contact-thanks">
+            <span class="icon-symbol" class="check"></span>
+            <h2>{{ .Site.Params.thanks.title }}</h2>
+            <p>{{ .Site.Params.thanks.description }}</p>
+            <p>{{ .Site.Params.thanks.description2 }}</p>
+        </div>
     </div>
-
-    <div id="contact-form-thanks">
-        <span class="icon-symbol" class="check"></span>
-        <h2>{{ .Site.Params.thanks.title }}</h2>
-        <p class="description">{{ .Site.Params.thanks.description }}</p>
-        <p class="description">{{ .Site.Params.thanks.description2 }}</p>
-    </div>
-    <label class="contact-form-button" for="form-open">{{ .Site.Params.contact.formButton }}</label>
-    <span class="contact-form-bg"></span>
-
 </section>

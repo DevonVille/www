@@ -15,40 +15,52 @@
     padding-top: 4rem;
     transition: opacity .1s 1s linear;
     z-index: z(under);
+    @include mq(mobile, landscape) { height: 480px; }
+  }
+  #contact-sent:target .contact-form {
+    @include mq(mobile, landscape) {
+      height: 0;
+      transition: height .5s 1s linear;
+    }
   }
 
   .contact-form form {
-    // align-items: center;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    position: relative;
-    > * { width: 100%; }
-    @include mq(tablet) { > * { flex: 1; } }
-
     .form-inputs {
       display: flex;
-      flex-direction: column;
+      flex-wrap: wrap;
       justify-content: space-between;
-    }
-    input[type='text'] { @include mq(mobile, tablet) { margin-bottom: 2rem; } }
-    textarea {
-      height: 160px;
-      @include mq(tablet) { margin-left: 2rem; }
-    }
-    input[type='submit'] {
-      @include centerer(horizontal);
-      @include size(320px 46px);
-      background: none;
-      border: none;
-      bottom: -86px;
-      color: transparent;
+      position: relative;
+      > * { width: 100%; }
+      @include mq(tablet) { > * { flex: 1; } }
+
+      div {
+        border: none;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        padding: 0;
+        input[type='text'] { @include mq(mobile, tablet) { margin-bottom: 2rem; } }
+      }
+      textarea {
+        height: 160px;
+        @include mq(tablet) { margin-left: 2rem; }
+      }
     }
   }
 
-  // Form Contact Thanks Button
+  // Form Contact Submit Button
   // -----------------------------------------------------------------------------------------------------------------------------
-  .contact-form-button {
+  .form-submit {
+    position: relative;
+    input[type='submit'] {
+      @include position(absolute, 0 0 0 0);
+      background: none;
+      border: none;
+      color: transparent;
+      width: 100%;
+    }
+  }
+  .form-submit-button {
     @include btn($GrayDarker);
     @include btn-shine;
     margin-top: 40px;
@@ -57,7 +69,7 @@
       width: 100%;
     }
   }
-  #contact-form-thanks:target ~ .contact-form-button {
+  #contact-sent:target .form-submit-button {
     color: transparent;
     padding: 1rem 0;
     transition: padding .5s linear, width .5s ease-in-out;
@@ -65,19 +77,19 @@
     width: 4rem;
   }
 
-  // Form Contact Thanks BG
+  // Form Contact Submit BG
   // -----------------------------------------------------------------------------------------------------------------------------
-  .contact-form-bg {
+  .form-submit-bg {
     @include centerer(horizontal);
     @include size(4rem);
     background: $GrayDarker;
     border-radius: 50%;
-    bottom: 8rem;
+    bottom: 10px;
     opacity: 0;
     transition: transform 1s .5s, visibility 0s .5s;
     visibility: hidden;
   }
-  #contact-form-thanks:target ~ .contact-form-bg {
+  #contact-sent:target .form-submit-bg {
     opacity: 1;
     transform: scale(60);
     visibility: visible;
@@ -85,7 +97,7 @@
 
   // Form Contact Thanks Box
   // -----------------------------------------------------------------------------------------------------------------------------
-  #contact-form-thanks {
+  .contact-thanks {
     @include position(absolute, 0 0 0 0);
     align-items: center;
     color: $White;
@@ -104,7 +116,7 @@
       margin-bottom: 2rem;
     }
   }
-  #contact-form-thanks:target {
+  #contact-sent:target .contact-thanks {
     opacity: 1;
     z-index: z(default);
   }
