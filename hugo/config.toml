@@ -37,6 +37,28 @@ email = "iwfmp@yandex.com"
     subtitle = "I'm a CSS Wizard."
     buttonText = "Yes, I'm Available for hire"
 
+  # Contact section
+  # ******************************************************************************************************************************
+  [params.contact]
+    title = "Want to work together?"
+    description = "I'm currently accepting new projects and would love to hear about yours."
+    description2 = "Please take a few minutes to tell me about it."
+    buttonText = "Contact me!"
+
+    # Form fields
+    formName = "Name"
+    formEmail = "Email"
+    formPhone = "Phone"
+    formMessage = "Tell me about your project"
+    formButton = "Submit"
+
+  # Thanks section
+  # ******************************************************************************************************************************
+  [params.thanks]
+    title = "Your message was sent!"
+    description = "Thank you for your submission! I'll get it touch with you to schedule a time to chat."
+    description2 = "You should expect to hear from me in a day or so."
+
   # Footer section
   # ******************************************************************************************************************************
   [params.footer]

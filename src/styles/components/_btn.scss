@@ -3,13 +3,14 @@
   border: 2px solid $border;
   border-radius: 3rem;
   color: $font;
+  cursor: pointer;
   display: inline-block;
   font-family: $FontBold;
-  min-width: 150px;
   padding: 1rem 2rem;
   text-align: center;
   text-transform: uppercase;
   transition: padding .3s ease-in-out;
+  width: 22rem;
   @include mq(tablet) { padding: 1rem 6rem; }
 
   &:hover {

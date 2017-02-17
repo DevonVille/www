@@ -44,4 +44,16 @@ html body {
       text-decoration: none;
     }
   }
+  input, button, textarea {
+    @include mq(mobile, tablet) { width: 100%; }
+    background-color: transparent;
+    border: 2px solid $GrayDarker;
+    border-radius: 5px;
+    box-sizing: border-box;
+    color: $GrayDarker;
+    font-size: 1.3rem;
+    outline: none;
+    padding: 1rem 2rem;
+    resize: none;
+  }
 }

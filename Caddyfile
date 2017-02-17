@@ -13,6 +13,11 @@ startup npm run gulp build:all
 #   then  hugo --destination=dist
 # }
 
+rewrite / {
+    regexp .*
+    to /
+}
+
 log .cache/logs/access.log {
     rotate {
         size 100 # Rotate after 100 MB

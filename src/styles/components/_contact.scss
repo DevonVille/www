@@ -1,0 +1,111 @@
+#contact {
+  background: $Yellow;
+  overflow: hidden;
+  position: relative;
+  p {
+    font-size: 2rem;
+    margin: 0;
+  }
+
+  // Form Design
+  // -----------------------------------------------------------------------------------------------------------------------------
+  .contact-form {
+    margin: 0 auto;
+    max-width: 1000px;
+    padding-top: 4rem;
+    transition: opacity .1s 1s linear;
+    z-index: z(under);
+  }
+
+  .contact-form form {
+    // align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    position: relative;
+    > * { width: 100%; }
+    @include mq(tablet) { > * { flex: 1; } }
+
+    .form-inputs {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+    input[type='text'] { @include mq(mobile, tablet) { margin-bottom: 2rem; } }
+    textarea {
+      height: 160px;
+      @include mq(tablet) { margin-left: 2rem; }
+    }
+    input[type='submit'] {
+      @include centerer(horizontal);
+      @include size(320px 46px);
+      background: none;
+      border: none;
+      bottom: -86px;
+      color: transparent;
+    }
+  }
+
+  // Form Contact Thanks Button
+  // -----------------------------------------------------------------------------------------------------------------------------
+  .contact-form-button {
+    @include btn($GrayDarker);
+    @include btn-shine;
+    margin-top: 40px;
+    @include mq(mobile, landscape) {
+      box-sizing: border-box;
+      width: 100%;
+    }
+  }
+  #contact-form-thanks:target ~ .contact-form-button {
+    color: transparent;
+    padding: 1rem 0;
+    transition: padding .5s linear, width .5s ease-in-out;
+    white-space: nowrap;
+    width: 4rem;
+  }
+
+  // Form Contact Thanks BG
+  // -----------------------------------------------------------------------------------------------------------------------------
+  .contact-form-bg {
+    @include centerer(horizontal);
+    @include size(4rem);
+    background: $GrayDarker;
+    border-radius: 50%;
+    bottom: 8rem;
+    opacity: 0;
+    transition: transform 1s .5s, visibility 0s .5s;
+    visibility: hidden;
+  }
+  #contact-form-thanks:target ~ .contact-form-bg {
+    opacity: 1;
+    transform: scale(60);
+    visibility: visible;
+  }
+
+  // Form Contact Thanks Box
+  // -----------------------------------------------------------------------------------------------------------------------------
+  #contact-form-thanks {
+    @include position(absolute, 0 0 0 0);
+    align-items: center;
+    color: $White;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    opacity: 0;
+    padding: 0 2rem;
+    transition: opacity .2s 1s linear;
+    z-index: z(under);
+
+    .icon-symbol {
+      @include icon-symbol(transparent, $White, 50px);
+      @include check-animate;
+      border: 2px solid $White;
+      margin-bottom: 2rem;
+    }
+  }
+  #contact-form-thanks:target {
+    opacity: 1;
+    z-index: z(default);
+  }
+}

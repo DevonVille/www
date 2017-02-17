@@ -5,11 +5,14 @@ $Black: #000;
 $Gray: #808080;
 $GrayDarker: #252525;
 $GrayLight: #a2a2a2;
+$GrayLighter: #aaa;
+$GrayLightest: #eaeaea;
 $White: #fff;
 $DarkBlue: rgb(49, 61, 65);
 $Yellow: #fdcd3b;
 $LightBlue: #00b4ff;
 $LightRed: #f84462;
+$Green: #41d56a;
 
 $FontReg: 'Lato', sans-serif;
 $FontBold: 'Montserrat', sans-serif;
@@ -25,13 +28,17 @@ $FontBold: 'Montserrat', sans-serif;
 @import 'utilities/z-index';
 
 // ******************************************************************************************************************************
-// Componenets
-// *****************************************************************************************************************************
-@import 'components/btn';
-
-// ******************************************************************************************************************************
 // Animations
 // *****************************************************************************************************************************
+@import 'animations/check';
 @import 'animations/background';
 @import 'animations/nav-gooey';
 @import 'animations/nav-stroke';
+
+// ******************************************************************************************************************************
+// Componenets
+// *****************************************************************************************************************************
+@import 'components/btn';
+@import 'components/icon-symbol';
+@import 'components/contact';
+@import 'components/expertise';
