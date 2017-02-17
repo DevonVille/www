@@ -100,6 +100,7 @@
   .contact-thanks {
     @include position(absolute, 0 0 0 0);
     align-items: center;
+    background: $GrayDarker;
     color: $White;
     display: flex;
     flex-direction: column;

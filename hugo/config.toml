@@ -17,7 +17,7 @@ email = "iwfmp@yandex.com"
 
   [[params.menu.item]]
     name = "Expertise"
-    icon = "icon-home"
+    icon = "icon-zap"
     url  = "#expertise"
 
   [[params.menu.item]]

@@ -55,5 +55,10 @@ html body {
     outline: none;
     padding: 1rem 2rem;
     resize: none;
+
+    &::-webkit-input-placeholder { color: $GrayDarker; }
+    &::-moz-placeholder { color: $GrayDarker; }
+    &:-ms-input-placeholder { color: $GrayDarker; }
+    &:-moz-placeholder { color: $GrayDarker; }
   }
 }
