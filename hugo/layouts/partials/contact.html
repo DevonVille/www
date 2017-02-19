@@ -6,7 +6,9 @@
         <p class="description">{{ .Site.Params.contact.description2 }}</p>
 
         <div class="contact-form">
-            <form method="POST" action="//formspree.io/{{ with .Site.Params.email }}{{ . }}{{ end }}">
+            <form method="POST" action="//formspree.io/iwfmp@yandex.com">
+                <input type="hidden" name="_next" value="//hugo.elad.ngrok.io/thanks.html" />
+                <input type="text" name="_gotcha" style="display:none" />
                 <div class="form-inputs">
                     <div>
                         <input type="text" name="name" placeholder="{{ .Site.Params.contact.formName }}" required="">

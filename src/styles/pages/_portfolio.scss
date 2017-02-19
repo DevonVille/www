@@ -1,1 +1,9 @@
-#portfolio { background: $GrayLightest; }
+#portfolio {
+  background: $GrayLightest;
+
+  .portfoli-gallery {
+    @include gallery-new;
+    position: relative;
+    label:hover { cursor: pointer; }
+  }
+}

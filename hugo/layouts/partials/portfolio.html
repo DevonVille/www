@@ -1,3 +1,41 @@
 <section id="portfolio">
     <h2>{{ .Site.Data.portfolio.title }}</h2>
+
+    <div class="portfoli-gallery">
+        <input checked type="radio" name="slider" id="slide1">
+        <input type="radio" name="slider" id="slide2">
+        <input type="radio" name="slider" id="slide3">
+        <input type="radio" name="slider" id="slide4">
+
+        <div class="portfolio-gallery-slides">
+            <figure class="gallery-item">
+                <img src="/img/portfolio/MyQuest-Desktop.jpg" alt="">
+                <figcaption>
+                    <h3>Title</h3>
+                    <p>Description</p>
+                </figcaption>
+            </figure>
+            <figure class="gallery-item">
+                <img src="/img/portfolio/MyQuest-Desktop2.jpg" alt="">
+                <figcaption>
+                    <h3>Another Title</h3>
+                    <p>Another Description</p>
+                </figcaption>
+            </figure>
+        </div>
+
+        <div class="portfolio-gallery-controls">
+            <label for="slide1"></label>
+            <label for="slide2"></label>
+            <label for="slide3"></label>
+            <label for="slide4"></label>
+        </div>
+
+        <div class="portfolio-gallery-breadcrumbs">
+            <label for="slide1"></label>
+            <label for="slide2"></label>
+            <label for="slide3"></label>
+            <label for="slide4"></label>
+        </div>
+    </div>
 </section>
