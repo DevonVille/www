@@ -4,7 +4,7 @@ baseurl = "http://localhost"
 languageCode = "en-us"
 title = "Elad Rom | Front End Developer"
 publishdir = "../public"
-googleAnalytics = ""
+googleAnalytics = "UA-92279372-1"
 email = "iwfmp@yandex.com"
 
 [params]
