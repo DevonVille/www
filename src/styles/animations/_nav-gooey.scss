@@ -89,7 +89,7 @@
     @for $i from 1 through $menu-items {
       $angle: (($pi - $opening-angle) / 2) + (($opening-angle/($menu-items - 1)) * ($i - 1));
       &:nth-child(#{$i+2}) {
-        transform: translate3d(- cos($angle) * $open-distance, sin($angle) * $open-distance, 0);
+        transform: translate3d(cos($angle) * $open-distance, sin($angle) * $open-distance, 0);
         transition-duration: 80ms + (80ms * $i);
       }
     }

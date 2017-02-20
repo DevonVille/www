@@ -83,11 +83,9 @@
     // Gallery Images - Captions Link
     // -----------------------------------------------------------------------------------------------------------------------------
     .gallery-item-link {
-      @include btn($GrayDarker);
-      background: none;
-      border: 2px solid $GrayDarker;
-      color: $GrayDarker;
+      @include btn($Yellow);
       margin-top: 2rem;
+      width: auto;
     }
   }
 
@@ -116,7 +114,7 @@
   .portfolio-gallery-breadcrumbs {
     display: flex;
     justify-content: center;
-    margin-top: 4rem;
+    margin-top: 2rem;
 
     label {
       @include icon-symbol($White, transparent, 1.5rem);
