@@ -1,6 +1,0 @@
-.non-visual-disabled { pointer-events: none; }
-.disabled {
-  @extend .non-visual-disabled;
-  cursor: default;
-  opacity: .4;
-}
