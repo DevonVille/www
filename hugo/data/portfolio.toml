@@ -6,27 +6,20 @@ title = "Portfolio"
 [[item]]
   title = "MyQuest"
   description = "MyQuest is the closest you can get to having a World-Renowned personal coach in your pocket."
-  website = "https://www.myquest.co/"
+  website = "https://www.myquest.co"
   image = "/img/portfolio/MyQuest.png"
   weight = "1"
 
 [[item]]
-  title = "MyQuest"
-  description = "MyQuest is the closest you can get to having a World-Renowned personal coach in your pocket."
-  website = "https://www.myquest.co/"
-  image = "/img/portfolio/MyQuest.png"
+  title = "Wix Jobs"
+  description = "Wix.com is a leading cloud-based development platform with millions of users worldwide."
+  website = "http://www.wix.com/jobs/locations/tel-aviv/positions"
+  image = "/img/portfolio/WixJobs.png"
   weight = "2"
 
 [[item]]
-  title = "MyQuest"
-  description = "MyQuest is the closest you can get to having a World-Renowned personal coach in your pocket."
-  website = "https://www.myquest.co/"
-  image = "/img/portfolio/MyQuest.png"
+  title = "Wix Market"
+  description = "Wix.com is a leading cloud-based development platform with millions of users worldwide."
+  website = "http://www.wix.com/app-market/main"
+  image = "/img/portfolio/WixMarket.png"
   weight = "3"
-
-[[item]]
-  title = "MyQuest"
-  description = "MyQuest is the closest you can get to having a World-Renowned personal coach in your pocket."
-  website = "https://www.myquest.co/"
-  image = "/img/portfolio/MyQuest.png"
-  weight = "4"
