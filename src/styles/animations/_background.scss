@@ -30,7 +30,7 @@
 
 #background-wrap {
   @include position(absolute, 0 0 0 0);
-  background: $LightBlue;
+  background: $Blue;
   overflow: hidden;
   padding-top: 50px;
   z-index: z(under);
