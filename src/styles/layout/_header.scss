@@ -8,6 +8,12 @@
   min-height: 350px;
   padding: 0;
 
+  .logo {
+    @include centerer(horizontal);
+    top: 4rem;
+    img { @include size(160px); }
+    @include mq(tablet) { top: 12rem; }
+  }
   .btn {
     @include btn($Yellow);
     @include btn-shine;

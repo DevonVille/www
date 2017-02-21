@@ -98,6 +98,8 @@
     width: 100%;
     z-index: z(default);
 
+    @include mq(mobile, tablet) { display: none; }
+
     label {
       @include size(4rem);
       border-right: 6px solid $GrayDarker;
