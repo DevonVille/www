@@ -1,11 +1,7 @@
 # ******************************************************************************************************************************
-# Site settings
+# Header section
 # ******************************************************************************************************************************
-baseurl = "http://eladrom.com"
-languageCode = "en-us"
-title = "Elad Rom | Front End Developer"
-publishdir = "../public"
-googleAnalytics = "UA-92279372-1"
-
-[params]
-  email = "iwfmp@yandex.com"
+logo = "img/logo.png"
+title = "Hi, I'm Elad."
+subtitle = "I'm a CSS Wizard."
+buttonText = "Yes, I'm Available for hire"

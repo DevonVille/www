@@ -7,7 +7,7 @@
             <span class="hamburger hamburger-3"></span>
         </label>
 
-      {{ range .Site.Params.menu.item }}
+      {{ range .Site.Data.nav.item }}
         <a class="menu-item" href="{{ .url }}">
             <i class="{{ .icon }}"></i>
             <span>{{ .name }}</span>

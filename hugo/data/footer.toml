@@ -1,11 +1,17 @@
 # ******************************************************************************************************************************
-# Site settings
+# Footer section
 # ******************************************************************************************************************************
-baseurl = "http://eladrom.com"
-languageCode = "en-us"
-title = "Elad Rom | Front End Developer"
-publishdir = "../public"
-googleAnalytics = "UA-92279372-1"
+title="Footer"
+copyright = "Published under the Unlicense License"
 
-[params]
-  email = "iwfmp@yandex.com"
+[[social]]
+  icon = "icon-github"
+  link = "#"
+
+[[social]]
+  icon = "icon-email"
+  link = "#"
+
+[[social]]
+  icon = "icon-dribble"
+  link = "#"

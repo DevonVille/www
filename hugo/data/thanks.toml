@@ -1,11 +1,6 @@
 # ******************************************************************************************************************************
-# Site settings
+# Thanks section
 # ******************************************************************************************************************************
-baseurl = "http://eladrom.com"
-languageCode = "en-us"
-title = "Elad Rom | Front End Developer"
-publishdir = "../public"
-googleAnalytics = "UA-92279372-1"
-
-[params]
-  email = "iwfmp@yandex.com"
+title = "Your message was sent!"
+description = "Thank you for your submission! I'll get it touch with you to schedule a time to chat."
+description2 = "You should expect to hear from me in a day or so."

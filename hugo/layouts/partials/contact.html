@@ -1,26 +1,26 @@
 {{ "<!-- Form section -->" | safeHTML }}
 <section id="contact">
     <div id="contact-sent">
-        <h2>{{ .Site.Params.contact.title }}</h2>
-        <p class="description">{{ .Site.Params.contact.description }}</p>
-        <p class="description">{{ .Site.Params.contact.description2 }}</p>
+        <h2>{{ .Site.Data.contact.title }}</h2>
+        <p class="description">{{ .Site.Data.contact.description }}</p>
+        <p class="description">{{ .Site.Data.contact.description2 }}</p>
 
         <div class="contact-form">
-            <form method="POST" action="//formspree.io/iwfmp@yandex.com">
-                <input type="hidden" name="_next" value="//hugo.elad.ngrok.io/thanks.html" />
+            <form method="POST" action="//formspree.io/{{ .Site.Params.email }}">
+                <input type="hidden" name="_next" value="{{ .Site.Data.contact.sent }}" />
                 <input type="text" name="_gotcha" style="display:none" />
                 <div class="form-inputs">
                     <div>
-                        <input type="text" name="name" placeholder="{{ .Site.Params.contact.formName }}" required="">
-                        <input type="text" name="_replyto" placeholder="{{ .Site.Params.contact.formEmail }}" required="">
-                        <input type="text" name="phone" placeholder="{{ .Site.Params.contact.formPhone }}" required="">
+                        <input type="text" name="name" placeholder="{{ .Site.Data.contact.formName }}" required>
+                        <input type="text" name="_replyto" placeholder="{{ .Site.Data.contact.formEmail }}" required>
+                        <input type="text" name="phone" placeholder="{{ .Site.Data.contact.formPhone }}">
                     </div>
-                    <textarea name="message" placeholder="{{ .Site.Params.contact.formMessage }}" required=""></textarea>
+                    <textarea name="message" placeholder="{{ .Site.Data.contact.formMessage }}" required=""></textarea>
                 </div>
                 <div class="form-submit">
                     <label class="form-submit-button" for="form-open">
-                        <input type="submit" value="{{ .Site.Params.contact.formButton }}">
-                        {{ .Site.Params.contact.formButton }}
+                        <input type="submit" value="{{ .Site.Data.contact.formButton }}">
+                        {{ .Site.Data.contact.formButton }}
                     </label>
                     <span class="form-submit-bg"></span>
                 </div>
@@ -29,9 +29,9 @@
 
         <div class="contact-thanks">
             <span class="icon-symbol" class="check"></span>
-            <h2>{{ .Site.Params.thanks.title }}</h2>
-            <p>{{ .Site.Params.thanks.description }}</p>
-            <p>{{ .Site.Params.thanks.description2 }}</p>
+            <h2>{{ .Site.Data.thanks.title }}</h2>
+            <p>{{ .Site.Data.thanks.description }}</p>
+            <p>{{ .Site.Data.thanks.description2 }}</p>
         </div>
     </div>
 </section>

@@ -1,11 +1,19 @@
 # ******************************************************************************************************************************
-# Site settings
+# Navigation
 # ******************************************************************************************************************************
-baseurl = "http://eladrom.com"
-languageCode = "en-us"
-title = "Elad Rom | Front End Developer"
-publishdir = "../public"
-googleAnalytics = "UA-92279372-1"
+title="Navigation"
 
-[params]
-  email = "iwfmp@yandex.com"
+[[item]]
+  name = "Expertise"
+  icon = "icon-zap"
+  url  = "#expertise"
+
+[[item]]
+  name = "Portfolio"
+  icon = "icon-briefcase"
+  url  = "#portfolio"
+
+[[item]]
+  name = "Contact"
+  icon = "icon-mail"
+  url  = "#contact"

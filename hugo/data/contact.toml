@@ -1,0 +1,15 @@
+# ******************************************************************************************************************************
+# Contact section
+# ******************************************************************************************************************************
+title = "Want to work together?"
+description = "I'm currently accepting new projects and would love to hear about yours."
+description2 = "Please take a few minutes to tell me about it."
+buttonText = "Contact me!"
+sent = "/#contact-sent"
+
+# Form fields
+formName = "Name *"
+formEmail = "Email *"
+formPhone = "Phone"
+formMessage = "Please tell me a bit about your project - What is it? How can I help? Timeline and budget details are also appreciated. *"
+formButton = "Submit"
