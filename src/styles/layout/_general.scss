@@ -58,8 +58,8 @@ html body {
     padding: 1rem 2rem;
     resize: none;
 
-    &::placeholder { color: $DarkBlue; }
-    &::input-placeholder { color: $DarkBlue; }
+    &::placeholder { color: $GrayDarker; }
+    &::input-placeholder { color: $GrayDarker; }
   }
 
   .no-select {
