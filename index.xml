@@ -2,11 +2,11 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Elad Rom | Front End Developer</title>
-    <link>http://localhost/</link>
+    <link>http://eladrom.com/</link>
     <description>Recent content on Elad Rom | Front End Developer</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <atom:link href="http://localhost/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://eladrom.com/index.xml" rel="self" type="application/rss+xml" />
     
   </channel>
 </rss>
