@@ -8,7 +8,6 @@
         <div class="contact-form">
             <form method="POST" action="//formspree.io/{{ .Site.Params.email }}">
                 <input type="hidden" name="_next" value="{{ .Site.Data.contact.sent }}" />
-                <input type="text" name="_gotcha" style="display:none" />
                 <div class="form-inputs">
                     <div>
                         <input type="text" name="name" placeholder="{{ .Site.Data.contact.formName }}" required>
@@ -17,6 +16,8 @@
                     </div>
                     <textarea name="message" placeholder="{{ .Site.Data.contact.formMessage }}" required=""></textarea>
                 </div>
+                <input type="text" name="_gotcha" style="display:none" />
+                <input type="hidden" name="_subject" value="Message via {{ .Site.BaseURL }}">
                 <div class="form-submit">
                     <label class="form-submit-button" for="form-open">
                         <input type="submit" value="{{ .Site.Data.contact.formButton }}">
