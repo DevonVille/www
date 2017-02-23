@@ -14,6 +14,9 @@
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 
 
+<script src="https://cdnjs.cloudflare.com/ajax/libs/smooth-scroll/10.2.1/js/smooth-scroll.min.js"></script>
+
+
 <link href="https://fonts.googleapis.com/css?family=Montserrat:700" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css?family=Lato:300" rel="stylesheet">
 
@@ -32,17 +35,17 @@
         </label>
 
       
-        <a class="menu-item" href="#expertise">
+        <a data-scroll class="menu-item" href="#expertise">
             <i class="icon-zap"></i>
             <span>Expertise</span>
         </a>
       
-        <a class="menu-item" href="#portfolio">
+        <a data-scroll class="menu-item" href="#portfolio">
             <i class="icon-briefcase"></i>
             <span>Portfolio</span>
         </a>
       
-        <a class="menu-item" href="#contact">
+        <a data-scroll class="menu-item" href="#contact">
             <i class="icon-mail"></i>
             <span>Contact</span>
         </a>
@@ -290,4 +293,12 @@ ga('create', 'UA-92279372-1', 'auto');
 ga('send', 'pageview');
 </script>
 
+
+    <script>
+        smoothScroll.init();
+        window.location.replace("#");
+        if (typeof window.history.replaceState == 'function') {
+          history.replaceState({}, '', window.location.href.slice(0, -1));
+        }
+    </script>
 </html>
