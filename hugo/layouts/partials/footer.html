@@ -1,0 +1,14 @@
+<footer id="footer">
+    <p class="copyright">{{ .Site.Data.footer.copyright }}</p>
+
+    <ul class="footer-social">
+        {{ range .Site.Data.footer.social }}
+        <li>
+            <a href="{{ .link }}" target="_blank">
+                <i class="{{ .icon }}"></i>
+                <span class="visually_hidden">{{ .title }}</span>
+            </a>
+        </li>
+        {{ end }}
+    </ul>
+</footer>

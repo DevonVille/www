@@ -9,10 +9,9 @@
   padding: 0;
 
   .logo {
-    @include centerer(horizontal);
-    top: 4rem;
+    margin: -2rem 0 2rem;
     img { @include size(160px); }
-    @include mq(tablet) { top: 12rem; }
+    @include mq(tablet) { margin: -4rem 0 4rem;; }
   }
   .btn {
     @include btn($Yellow);

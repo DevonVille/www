@@ -2,16 +2,14 @@
 # Footer section
 # ******************************************************************************************************************************
 title="Footer"
-copyright = "Published under the Unlicense License"
+copyright = "Published under the I don't care License © 2017"
 
 [[social]]
+  title = "Github"
   icon = "icon-github"
-  link = "#"
+  link = "https://github.com/iwfmp"
 
 [[social]]
-  icon = "icon-email"
-  link = "#"
-
-[[social]]
-  icon = "icon-dribble"
-  link = "#"
+  title = "LinkedIn"
+  icon = "icon-linkedin"
+  link = "https://www.linkedin.com/in/elad-rom-b1619b106/"

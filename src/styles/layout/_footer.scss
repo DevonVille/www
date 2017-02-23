@@ -1,0 +1,27 @@
+#footer {
+  align-items: center;
+  background: $GrayDarker;
+  color: $GrayLight;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  .logo {
+    @include size(80px);
+    img { @include size(100% auto); }
+  }
+  .copyright { font-size: 1.4rem; }
+  .footer-social {
+    display: flex;
+    margin-top: 1rem;
+    li {
+      transition: opacity .2s linear;
+      &:not(:hover) { opacity: .5; }
+    }
+    a {
+      color: $Black;
+      font-size: 2rem;
+      margin: 0 .5rem;
+    }
+  }
+}

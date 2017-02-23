@@ -28,7 +28,7 @@ gulp.task('hugo:all', ['hugo:delete'], function() {
     hugo(true);
 });
 
-gulp.task('hugo:delete', ['revision', 'domain'], function() {
+gulp.task('hugo:delete', ['revision', 'domain', 'fonts'], function() {
     var dst1 = path.join(process.cwd(), 'public');
     var dst2 = path.join(process.cwd(), 'hugo', 'public');
     del.sync(dst1);

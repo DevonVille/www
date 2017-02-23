@@ -11,8 +11,18 @@
             {{ partial "expertise.html" . }}
             {{ partial "portfolio.html" . }}
             {{ partial "contact.html" . }}
+            {{ partial "footer.html" . }}
         </main>
+
     </body>
 
     {{ template "_internal/google_analytics.html" . }}
+
+    <script>
+        smoothScroll.init();
+        window.location.replace("#");
+        if (typeof window.history.replaceState == 'function') {
+          history.replaceState({}, '', window.location.href.slice(0, -1));
+        }
+    </script>
 </html>

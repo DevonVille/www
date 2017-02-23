@@ -8,7 +8,7 @@
         </label>
 
       {{ range .Site.Data.nav.item }}
-        <a class="menu-item" href="{{ .url }}">
+        <a data-scroll class="menu-item" href="{{ .url }}">
             <i class="{{ .icon }}"></i>
             <span>{{ .name }}</span>
         </a>
