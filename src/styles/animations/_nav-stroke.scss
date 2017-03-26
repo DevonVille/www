@@ -1,7 +1,9 @@
 @mixin nav-stroke {
   .menu {
     display: flex;
-    input, label { display: none; }
+
+    input,
+    label { display: none; }
 
     .menu-item {
       color: $White;
@@ -12,7 +14,8 @@
       text-transform: uppercase;
       i { display: none; }
 
-      &::before, &::after {
+      &::before,
+      &::after {
         background: $White;
         content: '';
         height: 2px;
@@ -22,7 +25,9 @@
       }
       &::before { @include position(absolute, 0 null null 0); }
       &::after { @include position(absolute, null 0 0 null); }
-      &:hover::before, &:hover::after {
+
+      &:hover::before,
+      &:hover::after {
         opacity: 1;
         width: 100%;
       }

@@ -7,14 +7,18 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+
     @include mq(mobile, landscape) {
       flex-direction: column;
       justify-content: center;
     }
   }
+
   .expertise_block {
     margin: 2rem 0;
+
     @include mq(landscape) { width: 30%; }
+
     i {
       color: $Yellow;
       display: block;

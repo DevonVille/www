@@ -1,5 +1,6 @@
 #header {
   @include size(100% 100vh);
+
   align-items: center;
   color: $White;
   display: flex;
@@ -11,11 +12,14 @@
   .logo {
     margin: -2rem 0 2rem;
     img { @include size(160px); }
-    @include mq(tablet) { margin: -4rem 0 4rem;; }
+
+    @include mq(tablet) { margin: -4rem 0 4rem; }
   }
+
   .btn {
     @include btn($Yellow);
     @include btn-shine;
+
     margin-top: 40px;
   }
 }

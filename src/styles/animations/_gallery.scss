@@ -3,11 +3,13 @@
   // Variables
   // ******************************************************************************************************************************
   $items: 3;
+
   %btn-back {
     display: block;
     left: 0;
     transform: scaleX(-1) rotate(45deg);
   }
+
   %btn-next {
     display: block;
     right: 0;
@@ -18,6 +20,7 @@
   // Gallery Radio Buttons
   // ******************************************************************************************************************************
   input[type='radio'] { display: none; }
+
   @for $i from 1 through $items {
     input[type='radio']:nth-of-type(#{$i}):checked {
 
@@ -34,7 +37,9 @@
       & ~ .portfolio-gallery-controls label {
         $back: $i - 1;
         $next: $i + 1;
+
         @if ($i == 1) { $back: $items; }
+
         @if ($i == $items) { $next: 1; }
 
         &:nth-of-type(#{$back}) { @extend %btn-back; }
@@ -52,6 +57,7 @@
   // ******************************************************************************************************************************
   .gallery-item {
     @include position(absolute, 0 0 null 0);
+
     align-items: center;
     display: flex;
     justify-content: space-around;
@@ -59,8 +65,11 @@
     opacity: 0;
     transition: opacity .5s linear;
     width: 90%;
-    div, figcaption { flex: 1; }
+
+    div,
+    figcaption { flex: 1; }
     img { @include size(100% auto); }
+
     @include mq(mobile, desktop) {
       align-items: center;
       flex-direction: column-reverse;
@@ -73,6 +82,7 @@
       height: 200px;
       margin-right: 2rem;
       text-align: left;
+
       @include mq(mobile, desktop) {
         margin: 2rem 0 0;
         max-width: 400px;
@@ -84,6 +94,7 @@
     // -----------------------------------------------------------------------------------------------------------------------------
     .gallery-item-link {
       @include btn($Yellow);
+
       margin-top: 2rem;
       width: auto;
     }
@@ -94,6 +105,7 @@
   // ******************************************************************************************************************************
   .portfolio-gallery-controls {
     @include centerer(vertical);
+
     margin-top: -50px;
     width: 100%;
     z-index: z(default);
@@ -102,6 +114,7 @@
 
     label {
       @include size(4rem);
+
       border-right: 6px solid $GrayDarker;
       border-top: 6px solid $GrayDarker;
       display: none;
@@ -120,6 +133,7 @@
 
     label {
       @include icon-symbol($White, transparent, 1.5rem);
+
       margin: 0 5px;
       transition: background .2s linear;
     }

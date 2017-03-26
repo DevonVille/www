@@ -7,14 +7,17 @@ $height: 50px;
     height: 0;
     width: 0;
   }
+
   25% {
     height: 0;
     width: $width;
   }
+
   50% {
     height: $height;
     width: $width;
   }
+
   100% {
     border-color: $Green;
     height: $height;
@@ -29,6 +32,7 @@ $height: 50px;
   &::before {
     @include centerer(vertical);
     @include size(0);
+
     animation: animateCheck .5s 1.5s linear;
     animation-fill-mode: forwards;
     border-right: 6px solid transparent;

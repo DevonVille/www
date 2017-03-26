@@ -1,4 +1,5 @@
 html { font-size: 62.5%; }
+
 html body {
   color: $GrayDarker;
   font-family: $FontReg;
@@ -6,22 +7,31 @@ html body {
   line-height: 1.6;
   margin: 0;
 
-  h1, h2, h3, h4 {
+  h1,
+  h2,
+  h3,
+  h4 {
     font-family: $FontBold;
     letter-spacing: -.1rem;
     line-height: 1.2;
     margin: 0 0 10px;
   }
+
   h1 {
     font-size: 3.4rem;
+
     @include mq(desktop) { font-size: 5.7rem; }
   }
+
   h2 {
     font-size: 3rem;
+
     @include mq(desktop) { font-size: 4rem; }
   }
+
   h3 {
     font-size: 2rem;
+
     @include mq(desktop) { font-size: 2.8rem; }
   }
 
@@ -30,23 +40,32 @@ html body {
     margin: 0;
     padding: 0;
   }
+
   p {
     font-size: 1.6rem;
     margin: 0;
     + p { margin-top: 20px; }
   }
+
   a {
     color: $GrayDarker;
     text-decoration: none;
-    &:hover, &:active, &:focus {
+
+    &:hover,
+    &:active,
+    &:focus {
       color: $GrayDarker;
       cursor: pointer;
       outline: none;
       text-decoration: none;
     }
   }
-  input, button, textarea {
+
+  input,
+  button,
+  textarea {
     @include mq(mobile, tablet) { width: 100%; }
+
     background-color: transparent;
     border: 2px solid $GrayDarker;
     border-radius: 5px;

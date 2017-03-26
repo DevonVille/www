@@ -11,13 +11,16 @@
     img { @include size(100% auto); }
   }
   .copyright { font-size: 1.4rem; }
+
   .footer-social {
     display: flex;
     margin-top: 1rem;
+
     li {
       transition: opacity .2s linear;
       &:not(:hover) { opacity: .5; }
     }
+
     a {
       color: $Black;
       font-size: 2rem;

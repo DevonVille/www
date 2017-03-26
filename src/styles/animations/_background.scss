@@ -29,7 +29,7 @@
 }
 
 #background-wrap {
-  @include position(absolute, 0 0 0 0);
+  @include position(absolute, 0);
   background: $Blue;
   overflow: hidden;
   padding-top: 50px;

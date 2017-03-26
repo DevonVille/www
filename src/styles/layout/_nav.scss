@@ -1,6 +1,7 @@
 #navbar {
   @include position(absolute, 0 0 null 0);
   @include size(auto 8rem);
+
   align-items: center;
   display: flex;
   padding: 0 2rem;
@@ -8,13 +9,17 @@
 
   @include mq(mobile, tablet) {
     @include nav-gooey;
+
     padding-top: 1rem;
     #nav { box-shadow: 0 4px 4px 0 rgba($Black, .08); }
   }
+
   @include mq(tablet) {
     @include nav-stroke;
+
     background: rgba($Black, .3);
     box-shadow: 0 4px 4px 0 rgba($Black, .08);
   }
+
   @include mq(desktop) { padding: 0 calc((100% - 1000px) / 2); }
 }

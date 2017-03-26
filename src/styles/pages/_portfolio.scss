@@ -3,6 +3,7 @@
 
   .portfoli-gallery {
     @include gallery-new;
+
     margin: 40px auto;
     max-width: 1200px;
     position: relative;

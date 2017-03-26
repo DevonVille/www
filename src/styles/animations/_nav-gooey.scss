@@ -12,6 +12,7 @@
   %ball {
     @include size($size);
     @include centerer;
+
     background: $Yellow;
     border-radius: 50%;
     color: $White;
@@ -26,6 +27,7 @@
   // ******************************************************************************************************************************
   .menu-open-button {
     @extend %ball;
+
     cursor: pointer;
     transform: scale(1, 1) translate3d(0, 0, 0);
     transition-duration: 400ms;
@@ -37,6 +39,7 @@
   .hamburger {
     @include size(25px 3px);
     @include centerer;
+
     background: $White;
     display: block;
     transition: transform 200ms;
@@ -57,14 +60,17 @@
 
   .menu-item {
     @extend %ball;
+
     align-items: center;
     display: flex;
     justify-content: center;
     span { display: none; }
+
     &:hover {
       background: $White;
       color: $Yellow;
     }
+
     @for $i from 1 through $menu-items {
       &:nth-child(#{$i+2}) { transition-duration: 180ms; }
     }
@@ -74,6 +80,7 @@
   // Menu - Open
   // ******************************************************************************************************************************
   .menu-open { display: none; }
+
   .menu-open:checked + .menu-open-button {
     transform: scale(.8, .8) translate3d(0, 0, 0);
     transition-duration: 200ms;
@@ -86,8 +93,10 @@
 
   .menu-open:checked ~ .menu-item {
     transition-timing-function: cubic-bezier(.935, 0, .34, 1.33);
+
     @for $i from 1 through $menu-items {
       $angle: (($pi - $opening-angle) / 2) + (($opening-angle/($menu-items - 1)) * ($i - 1));
+
       &:nth-child(#{$i+2}) {
         transform: translate3d(cos($angle) * $open-distance, sin($angle) * $open-distance, 0);
         transition-duration: 80ms + (80ms * $i);

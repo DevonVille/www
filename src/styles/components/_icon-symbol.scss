@@ -7,9 +7,9 @@
 
   @if length($bg-color) > 1 {
     background: linear-gradient(to right, nth($bg-color, 1), nth($bg-color, 1) 50%, nth($bg-color, 2) 50%, nth($bg-color, 2));
-  } @else {
-    background: $bg-color;
   }
+
+  @else { background: $bg-color; }
 
   border-radius: 50%;
   color: $font-color;

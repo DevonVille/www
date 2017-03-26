@@ -2,10 +2,12 @@
   background: $Yellow;
   overflow: hidden;
   position: relative;
+
   p {
     font-size: 2rem;
     margin: 0;
   }
+
 
   // Form Design
   // -----------------------------------------------------------------------------------------------------------------------------
@@ -15,8 +17,10 @@
     padding-top: 4rem;
     transition: opacity .1s 1s linear;
     z-index: z(under);
+
     @include mq(mobile, landscape) { height: 480px; }
   }
+
   #contact-sent:target .contact-form {
     @include mq(mobile, landscape) {
       height: 0;
@@ -31,6 +35,7 @@
       justify-content: space-between;
       position: relative;
       > * { width: 100%; }
+
       @include mq(tablet) { > * { flex: 1; } }
 
       div {
@@ -41,8 +46,10 @@
         padding: 0;
         input[type='text'] { @include mq(mobile, tablet) { margin-bottom: 2rem; } }
       }
+
       textarea {
         height: 160px;
+
         @include mq(tablet) { margin-left: 2rem; }
       }
     }
@@ -52,8 +59,10 @@
   // -----------------------------------------------------------------------------------------------------------------------------
   .form-submit {
     position: relative;
+
     input[type='submit'] {
-      @include position(absolute, 0 0 0 0);
+      @include position(absolute, 0);
+
       background: none;
       border: none;
       color: transparent;
@@ -61,15 +70,19 @@
       width: 100%;
     }
   }
+
   .form-submit-button {
     @include btn($GrayDarker);
     @include btn-shine;
+
     margin-top: 40px;
+
     @include mq(mobile, landscape) {
       box-sizing: border-box;
       width: 100%;
     }
   }
+
   #contact-sent:target .form-submit-button {
     color: transparent;
     padding: 1rem 0;
@@ -83,6 +96,7 @@
   .form-submit-bg {
     @include centerer(horizontal);
     @include size(4rem);
+
     background: $GrayDarker;
     border-radius: 50%;
     bottom: 10px;
@@ -90,6 +104,7 @@
     transition: transform 1s .5s, visibility 0s .5s;
     visibility: hidden;
   }
+
   #contact-sent:target .form-submit-bg {
     opacity: 1;
     transform: scale(60);
@@ -99,7 +114,8 @@
   // Form Contact Thanks Box
   // -----------------------------------------------------------------------------------------------------------------------------
   .contact-thanks {
-    @include position(absolute, 0 0 0 0);
+    @include position(absolute, 0);
+
     align-items: center;
     background: $GrayDarker;
     color: $White;
@@ -114,10 +130,12 @@
     .icon-symbol {
       @include icon-symbol(transparent, $White, 50px);
       @include check-animate;
+
       border: 2px solid $White;
       margin-bottom: 2rem;
     }
   }
+
   #contact-sent:target .contact-thanks {
     opacity: 1;
     z-index: z(default);

@@ -11,10 +11,12 @@
   text-transform: uppercase;
   transition: padding .3s ease-in-out;
   width: 22rem;
+
   @include mq(tablet) { padding: 1rem 6rem; }
 
   &:hover {
     padding: 1rem 3rem;
+
     @include mq(tablet) { padding: 1rem 8rem; }
   }
 }
@@ -24,8 +26,10 @@
 @mixin btn-shine() {
   overflow: hidden;
   position: relative;
+
   &::before {
     @include centerer(vertical);
+
     animation: btn_shine 3s ease-in-out;
     animation-delay: 2s;
     animation-iteration-count: infinite;
